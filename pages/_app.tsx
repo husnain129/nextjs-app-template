@@ -1,5 +1,6 @@
 // pages/_app.js
 import { ChakraProvider } from '@chakra-ui/react';
+import NextNProgress from 'nextjs-progressbar';
 
 // 1. Import the extendTheme function
 import { extendTheme } from '@chakra-ui/react';
@@ -20,6 +21,7 @@ const theme = extendTheme({ colors });
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
+      <NextNProgress options={{ showSpinner: false }} />
       <Component {...pageProps} />
     </ChakraProvider>
   );
