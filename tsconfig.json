@@ -22,6 +22,6 @@
       "@/types/*": ["types*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "commitlint.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
